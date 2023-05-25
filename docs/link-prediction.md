@@ -130,8 +130,6 @@ python -m kbc.experiment --experiment_id MLE --dataset WN18RR --model SquaredCom
 
 ### ogbl-biokg
 
-#### CP
-
 #### CP (PLL)
 
 ```shell
@@ -214,24 +212,24 @@ which however can be  modified by specifying a different path with the parameter
 #### CP<sup>2</sup> (PLL and MLE)
 
 ```shell
-python -m kbc.experiment --experiment_id PLL --dataset FB15K-237 --model SquaredCP --rank 1000 --optimizer Adam --batch_size 5000 --learning_rate 0.001 --score_lhs True --score_rel True --score_rhs True \
+python -m kbc.experiment --experiment_id PLL --dataset FB15K-237 --model SquaredCP --rank 1000 --optimizer Adam --batch_size 2000 --learning_rate 0.001 --score_lhs True --score_rel True --score_rhs True \
   --distil_model True --distil_run "OAdam_LR0.001_B5000_GNone_R1000"
 ```
 
 ```shell
-python -m kbc.experiment --experiment_id MLE --dataset FB15K-237 --model SquaredCP --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_ll True \
+python -m kbc.experiment --experiment_id MLE --dataset FB15K-237 --model SquaredCP --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_ll True \
   --distil_model True --distil_run "OAdam_LR0.001_B5000_GNone_R1000"
 ```
 
 #### ComplEx<sup>2</sup> (PLL and MLE)
 
 ```shell
-python -m kbc.experiment --experiment_id PLL --dataset FB15K-237 --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_lhs True --score_rel True --score_rhs True \
+python -m kbc.experiment --experiment_id PLL --dataset FB15K-237 --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 5000 --learning_rate 0.0001 --score_lhs True --score_rel True --score_rhs True \
   --distil_model True --distil_run "OAdam_LR0.001_B500_GNone_R1000"
 ```
 
 ```shell
-python -m kbc.experiment --experiment_id MLE --dataset FB15K-237 --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_ll True \
+python -m kbc.experiment --experiment_id MLE --dataset FB15K-237 --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_ll True \
   --distil_model True --distil_run "OAdam_LR0.001_B500_GNone_R1000"
 ```
 
@@ -240,24 +238,24 @@ python -m kbc.experiment --experiment_id MLE --dataset FB15K-237 --model Squared
 #### CP<sup>2</sup> (PLL and MLE)
 
 ```shell
-python -m kbc.experiment --experiment_id PLL --dataset WN18RR --model SquaredCP --rank 1000 --optimizer Adam --batch_size 2000 --learning_rate 0.001 --score_lhs True --score_rel True --score_rhs True \
+python -m kbc.experiment --experiment_id PLL --dataset WN18RR --model SquaredCP --rank 1000 --optimizer Adam --batch_size 500 --learning_rate 0.0001 --score_lhs True --score_rel True --score_rhs True \
   --distil_model True --distil_run "OAdam_LR0.001_B500_GNone_R1000"
 ```
 
 ```shell
-python -m kbc.experiment --experiment_id MLE --dataset WN18RR --model SquaredCP --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_ll True \
+python -m kbc.experiment --experiment_id MLE --dataset WN18RR --model SquaredCP --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_ll True \
   --distil_model True --distil_run "OAdam_LR0.001_B500_GNone_R1000"
 ```
 
 #### ComplEx<sup>2</sup> (PLL and MLE)
 
 ```shell
-python -m kbc.experiment --experiment_id PLL --dataset WN18RR --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_lhs True --score_rel True --score_rhs True \
+python -m kbc.experiment --experiment_id PLL --dataset WN18RR --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_lhs True --score_rel True --score_rhs True \
   --distil_model True --distil_run "OAdam_LR0.001_B500_GNone_R1000"
 ```
 
 ```shell
-python -m kbc.experiment --experiment_id MLE --dataset WN18RR --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_ll True \
+python -m kbc.experiment --experiment_id MLE --dataset WN18RR --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_ll True \
   --distil_model True --distil_run "OAdam_LR0.001_B500_GNone_R1000"
 ```
 
@@ -271,7 +269,7 @@ python -m kbc.experiment --experiment_id PLL --dataset ogbl-biokg --model Square
 ```
 
 ```shell
-python -m kbc.experiment --experiment_id MLE --dataset ogbl-biokg --model SquaredCP --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.001 --score_ll True \
+python -m kbc.experiment --experiment_id MLE --dataset ogbl-biokg --model SquaredCP --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_ll True \
   --distil_model True --distil_run "OAdam_LR0.001_B5000_GNone_R1000"
 ```
 
@@ -283,6 +281,16 @@ python -m kbc.experiment --experiment_id PLL --dataset ogbl-biokg --model Square
 ```
 
 ```shell
-python -m kbc.experiment --experiment_id MLE --dataset ogbl-biokg --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 5000 --learning_rate 0.001 --score_ll True \
+python -m kbc.experiment --experiment_id MLE --dataset ogbl-biokg --model SquaredComplEx --rank 1000 --optimizer Adam --batch_size 1000 --learning_rate 0.0001 --score_ll True \
   --distil_model True --distil_run "OAdam_LR0.001_B5000_GNone_R1000"
+```
+
+## Reproduce Calibration Plots
+
+Here we show how to reproduce the calibration plots showed in the supplementary material.
+After training the models for link prediction (see above sections),
+run the script ```shell/eval_calibration.sh``` to reproduce the plots, as showed in the following example.
+
+```shell
+MODELS_PATH=path/to/saved/models DEVICE=cuda:0 bash shell/eval_calibration.sh
 ```
