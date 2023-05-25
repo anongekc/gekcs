@@ -118,3 +118,14 @@ In [link-prediction.md](docs/link-prediction.md) we list the commands and hyperp
 reproduce the results of the link prediction experiments.
 In addition, we show how to replicate the results relative to distilling and fine-tuning the proposed GeKCs
 from pre-trained KGE models (i.e., CP and ComplEx), and how to plot calibration curves of the models.
+
+### Integration od Domain Constraints
+
+In [domain-constraints.md](docs/domain-constraints.md) we list the commands, hyperparameters and instructions to
+reproduce the results about (i) how many triples that violate domain constraints are predicted by the models
+and (ii) how helpful for link prediction the integration of domain constraints in GeKCs is. 
+
+### Quality of Sampled Triples Results
+
+In [sampling.md](docs/sampling.md) we list the commands, hyperparameters and instructions to
+reproduce the results regarding the quality of sampled triples.
