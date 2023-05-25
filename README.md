@@ -1,7 +1,7 @@
 # How to Turn Your Knowledge Graph Embeddings into Generative Models via Probabilistic Circuits
 
 This repository contains the code for reproducing the experiments of the paper
-_"How to Turn Your Knowledge Graph Embeddings into Tractable Generative Models via Probabilistic Circuits"_.
+_"How to Turn Your Knowledge Graph Embeddings into Generative Models via Probabilistic Circuits"_.
 Inspired by state-of-the-art models of link prediction (e.g., ComplEx),
 we introduce a novel class of tractable generative models of triples in a knowledge graph (called GeKCs)
 whose implementation can be found in this repository.
