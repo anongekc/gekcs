@@ -1,4 +1,4 @@
-# How to Turn Your Knowledge Graph Embeddings into Tractable Generative Models via Probabilistic Circuits
+# How to Turn Your Knowledge Graph Embeddings into Generative Models via Probabilistic Circuits
 
 This repository contains the code for reproducing the experiments of the paper
 _"How to Turn Your Knowledge Graph Embeddings into Tractable Generative Models via Probabilistic Circuits"_.
